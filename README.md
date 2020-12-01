@@ -1,4 +1,4 @@
-# stallion
+# Stallion
 Userland for Minix OS
 
 # Build Tools
