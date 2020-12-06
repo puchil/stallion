@@ -1,10 +1,10 @@
 # Kernel
 
 ## Plan/Action
-Loader: bootboot
-Kernel: Minix Kernel
-Userland A: Minix Userland
-Userland B: Wayland + Stallion
+- [ ] Loader: bootboot
+- [ ] Kernel: Minix Kernel
+- [ ] Userland A: Minix Userland
+- [ ] Userland B: Wayland + Stallion
 
 ## Task List
 |Sl. | Task | Completed
