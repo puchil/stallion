@@ -6,7 +6,12 @@
 1. Productivity - Productivity Tools (Office, 
 1. Developer - All Developer tools needed
 
-## Listing
+## Productivity
 Name         | Description | Type
 ------------ | ------------------------------ | ---------------
 Notes | Take quick notes | Basic
+
+## Tools
+Name         | Description | Type
+------------ | ------------------------------ | ---------------
+Disk Manager | Handle Disk Partition | Windows: Disk Management or gparted
