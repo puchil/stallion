@@ -10,8 +10,10 @@
 Name         | Description | Type
 ------------ | ------------------------------ | ---------------
 Notes | Take quick notes | Basic
+Text Editor (vi) | Edit Text files/check log files | Default
 
-## Tools
+## Admin
 Name         | Description | Type
 ------------ | ------------------------------ | ---------------
-Disk Manager | Handle Disk Partition | Windows: Disk Management or gparted
+Disk Manager | Windows: Disk Management or gparted | Basic
+Processes (ps) | Processes running in the system | Default
