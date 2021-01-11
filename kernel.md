@@ -14,3 +14,4 @@
 |3.|Compile Minix Kernel / Services using LLVM|Pending
 |4.|Loading Minix Kernel using bootboot|Pending
 |5.|Understand debugging Minix Kernel|Pending
+|6.|USB Driver Support https://wiki.minix3.org/doku.php?id=ddekitusb|Pending
