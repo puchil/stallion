@@ -17,3 +17,9 @@ Name         | Description | Type
 ------------ | ------------------------------ | ---------------
 Disk Manager | Windows: Disk Management or gparted | Basic
 Processes (ps) | Processes running in the system | Default
+
+## Files - eq of LS Command
+List information about the files in the home directory of the user. Takes features from ls/cd
+* Show Hidden files (-A/--almost-all)/do not ignore entries starting with ., but do not list implied . and ..
+* Show Backups (-B, --ignore-backups)/list implied entries ending with ~
+* list directories themselves, not their contents (-d, --directory)
