@@ -7,6 +7,10 @@ The following are needed for us to have a useful interface.
    1. Favorites
 1. Window Decoration
    1. Operations
-   1. Title
-   1. Frequently Used
-   2. 
+       1. minimize
+       2. maximize
+       3. move
+       4. resize
+   3. Title
+   4. Frequently Used
+   5. 
