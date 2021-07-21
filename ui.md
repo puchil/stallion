@@ -11,6 +11,9 @@ The following are needed for us to have a useful interface.
        2. maximize
        3. move
        4. resize
+       5. close
    3. Title
-   4. Frequently Used
-   5. 
+   4. Frequently used menu items
+   5. Tabing
+   6. Multiple Files
+5. 
