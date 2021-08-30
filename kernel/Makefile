@@ -3,7 +3,7 @@ BSP ?= rpi3
 TARGET					=	aarch64-unknown-none-softfloat
 KERNEL_BIN				=	kernel8.img
 QEMU_BINARY				=	qemu-system-aarch64
-QEMU_RELEASE_ARGS		=	-d in_asm -display none
+QEMU_RELEASE_ARGS		=	-serial stdio -display none#-d in_asm -display none
 OBJDUMP_BINARY			=	aarch64-none-elf-objdump
 NM_BINARY				=	aarch64-none-elf-nm
 READELF_BINARY			=	aarch64-none-elf-readelf
@@ -35,16 +35,18 @@ CLIPPY_CMD		=	cargo clippy ${COMPILER_ARGS}
 CHECK_CMD		=	cargo check ${COMPILER_ARGS}
 OBJCOPY_CMD		=	rust-objcopy --strip-all -O binary
 EXEC_QEMU		=	${QEMU_BINARY} -M ${QEMU_MACHINE_TYPE}
+EXEC_TEST		=	ruby ../common/tests/dispatch.rb
 
 ##------------------------------------------------------------------------------
 ## Docker Commands
 ##-----------------------------------------------------------------------------
 DOCKER_IMAGE	=	rustembedded/osdev-utils
 DOCKER_CMD		=	docker run -t --rm -v $(shell pwd):/work/tutorial -w /work/tutorial
+DOCKER_CMN_DIR	=	-v $(shell pwd)/../common:/work/common
 DOCKER_CMD_I	=	$(DOCKER_CMD) -i
 DOCKER_QEMU		=	$(DOCKER_CMD_I) $(DOCKER_IMAGE)
 DOCKER_TOOLS	=	$(DOCKER_CMD) $(DOCKER_IMAGE)
-
+DOCKER_TEST		=	$(DOCKER_CMD) $(DOCKER_CMN_DIR)
 ##-----------------------------------------------------------------------------
 ## Targets
 ##-----------------------------------------------------------------------------
