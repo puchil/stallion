@@ -40,6 +40,7 @@
 #![feature(format_args_nl)]
 #![feature(global_asm)]
 #![feature(panic_info_message)]
+#![feature(trait_alias)]
 #![no_main]
 #![no_std]
 
@@ -48,10 +49,14 @@ mod console;
 mod cpu;
 mod panic_wait;
 mod print;
+mod synchronization;
 
-unsafe fn kernel_init() -> !{
+unsafe fn kernel_init() -> ! {
+	use console::interface::Statistics;
+
 	println!("[0] Hello from Stallion!");
-	println!("I am breathing...");
+	println!("[1] Chars written:...{}", bsp::console::console().chars_written() );
 
-	panic!("See you soon.");
+	println!("[2] See you soon.");
+	cpu::wait_forever()
 }
