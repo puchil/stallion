@@ -5,6 +5,7 @@ The following are needed for us to have a useful interface.
    1. Launcher
    1. Switcher
    1. Favorites
+   2. Quick Access
 1. Window Decoration
    1. Operations
        1. minimize
